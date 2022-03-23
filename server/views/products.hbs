@@ -1,0 +1,15 @@
+<h1>Products</h1>
+
+<div class="products-grid">
+    {{#each productDB}}
+        <div class="product-card">
+            <div class="product-card__img">
+                <img src={{this.productImage}} alt="producto">
+            </div>
+            <h3 class="product-title">{{this.productName}}</h3>
+            <p class="product-price">Price: {{this.price}}</p>
+            <p class="product-stock">stock: {{this.stock}}</p>
+            <button class="btn-reg">Buy</button>
+        </div>
+    {{/each}}
+</div>

@@ -1,0 +1,19 @@
+<table>
+  <tr>
+    <th>#</th>
+    <th>username</th>
+    <th>email</th>
+    <th>admin</th>
+    <th>Action</th>
+  </tr>
+{{#each usersDB}}
+  <tr>
+    <td>{{this.id}}</td>
+    <td>{{this.username}}</td>
+    <td>{{this.email}}</td>
+    <td>{{this.admin}}</td>
+    <td><button>Edit</button></td>
+  </tr>
+{{/each}}
+</table>
+<a href="/admin">Back</a>

@@ -1,0 +1,21 @@
+<table>
+  <tr>
+    <th>#</th>
+    <th style="width: 80px;">Image</th>
+    <th>Product name</th>
+    <th>Price</th>
+    <th>stock</th>
+    <th>Action</th>
+  </tr>
+{{#each productDB}}
+  <tr>
+    <td>{{this.id}}</td>
+    <td><img src={{this.productImage}} alt="product image" width="40px"></td>
+    <td>{{this.productName}}</td>
+    <td>{{this.price}}</td>
+    <td>{{this.stock}}</td>
+    <td><button>Edit</button></td>
+  </tr>
+{{/each}}
+</table>
+<a href="/admin">Back</a>
